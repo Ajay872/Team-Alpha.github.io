@@ -1,0 +1,303 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                background-color: linear-gradient( 60deg, rgb(153, 211, 198), rgb(153, 211, 198) 20%, rgb(98, 170, 175));
+                                margin: 0 2% 0 2%;
+                            }
+                            /*header styling*/
+                            
+                            .header {
+                                position: absolute;
+                                /*background: linear-gradient( 60deg, rgb(153, 211, 198), rgb(153, 211, 198) 20%, rgb(98, 170, 175));
+                            */
+                                width: 96%;
+                                height: 91vh;
+                                /*  clip-path: polygon( 0 0, 100% 0, 100% 80%, 0 100%);
+                           */
+                                border-radius: 2rem 2rem 0 0;
+                                /*property used  to clip the path(SHAPE) of header div*/
+                            }
+                            
+                            .header-img {
+                                width: 50%;
+                                height: 100%;
+                                float: left;
+                            }
+                            
+                            .image1 {
+                                width: 50%;
+                                position: relative;
+                                top: 40%;
+                                left: 40%;
+                                transform: translate(-50% -50%);
+                            }
+                            
+                            .image1:hover {
+                                translate: scale(2);
+                                transition: all 2s ease-in-out;
+                                cursor: pointer;
+                            }
+                            
+                            .image2 {
+                                width: 30%;
+                                height: 30%;
+                                position: relative;
+                                top: 40%;
+                                left: 40%;
+                                transform: translate(-50% -50%);
+                            }
+                            /* nav bar styling*/
+                            
+                            nav {
+                                position: sticky;
+                                top: 1px;
+                                display: inline-block;
+                                border-radius: 0 0 2rem 2rem;
+                                width: 100%;
+                                height: 8vh;
+                                background: linear-gradient( 60deg, rgb(97, 211, 219), rgb(78, 180, 158));
+                                margin-bottom: 1.5vh;
+                                z-index: 2;
+                            }
+                            
+                            .banner-text {
+                                width: 100%;
+                                position: absolute;
+                                z-index: 1;
+                            }
+                            
+                            .banner-text ul {
+                                height: 50px;
+                                float: right;
+                                margin-right: 7%;
+                            }
+                            
+                            .banner-text ul li a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            
+                            .banner-text ul li {
+                                display: inline-block;
+                                padding: 10px 15px;
+                                text-transform: uppercase;
+                                color: #fff;
+                                font-size: 20px;
+                            }
+                            
+                            .banner-text ul li:hover {
+                                cursor: pointer;
+                            }
+                            
+                            .banner-text h2 {
+                                text-align: center;
+                                color: #fff;
+                                font-size: 50px;
+                                margin-top: 1%;
+                            }
+                            
+                            .logo {
+                                width: 50%;
+                                height: 100%;
+                                float: left;
+                            }
+                            
+                            .logo img {
+                                width: 100%;
+                                height: 100%;
+                                transform: scale(1.2);
+                            }
+                            
+                            .animation-area {
+                                background: transparent;
+                                width: 100%;
+                                height: 180vh;
+                            }
+                            
+                            .box-area {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 180%;
+                                overflow: hidden;
+                            }
+                            
+                            .box-area li {
+                                position: absolute;
+                                display: block;
+                                list-style: none;
+                                width: 25px;
+                                height: 25px;
+                                background: #23d7f791;
+                                animation: downward 20s ease-in infinite;
+                                bottom: -150px;
+                            }
+                            
+                            .box-area li:nth-child(1) {
+                                left: 3%;
+                                width: 80px;
+                                height: 80px;
+                                animation-delay: 0s;
+                                clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                            }
+                            
+                            .box-area li:nth-child(2) {
+                                left: 40%;
+                                width: 30px;
+                                background: #0d9c66c0;
+                                height: 30px;
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                animation-delay: 1.5s;
+                                animation-duration: 10s;
+                            }
+                            
+                            .box-area li:nth-child(3) {
+                                left: 70%;
+                                width: 100px;
+                                height: 100px;
+                                animation-delay: 5.5s;
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                            }
+                            
+                            .box-area li:nth-child(4) {
+                                left: 42%;
+                                width: 150px;
+                                height: 150px;
+                                background: linear-gradient(to left, #82f5dc, #78d6d2);
+                                clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                                animation-delay: 0s;
+                                animation-duration: 15s;
+                            }
+                            
+                            .box-area li:nth-child(5) {
+                                left: 65%;
+                                width: 40px;
+                                height: 40px;
+                                animation-delay: 0s;
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                            }
+                            
+                            .box-area li:nth-child(6) {
+                                left: 20%;
+                                width: 110px;
+                                height: 110px;
+                                background: #13c78b98;
+                                animation-delay: 3.5s;
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                            }
+                            
+                            .box-area li:nth-child(7) {
+                                left: 7%;
+                                width: 40px;
+                                height: 40px;
+                                background: #4ff0e8cb;
+                                animation-delay: 4s;
+                                clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                                animation-duration: 5s;
+                            }
+                            
+                            .box-area li:nth-child(8) {
+                                left: 80%;
+                                width: 30px;
+                                height: 30px;
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                background: #25b6f0af;
+                                animation-delay: 1.5s;
+                                animation-duration: 5s;
+                            }
+                            
+                            @keyframes downward {
+                                0% {
+                                    transform: translateY(-1600px) rotate(360deg);
+                                    opacity: 1;
+                                }
+                                200% {
+                                    transform: translateY(0) rotate(0deg);
+                                    opacity: 0;
+                                }
+                            }
+                            /*styling cards */
+                            
+                            .divo {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                height: 60%;
+                                width: 100%;
+                            }
+                            
+                            .div1 {
+                                display: inline-block;
+                                height: 200px;
+                                width: 200px;
+                                background-image: url(./images/nptel.png);
+                                background-size: 95%;
+                                background-repeat: no-repeat;
+                                background-color: white;
+                                margin: 30px;
+                                border-radius: 10px;
+                            }
+                            
+                            .div2 {
+                                display: inline-block;
+                                height: 200px;
+                                width: 200px;
+                                background-image: url(./images/digital-india1.jpg);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                margin: 30px;
+                                border-radius: 10px;
+                            }
+                            
+                            .div3 {
+                                display: inline-block;
+                                height: 200px;
+                                width: 200px;
+                                background-image: url(./images/moodle-logo-1.jpg);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: -45px;
+                                margin: 30px;
+                                border-radius: 10px;
+                            }
+                            
+                            .div4 {
+                                display: inline-block;
+                                height: 200px;
+                                width: 200px;
+                                background-image: url(./images/AIT-Logo-25years.png);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                margin: 30px;
+                                border-radius: 10px;
+                            }
+                            /*styling cards  hover effects*/
+                            
+                            .cards:hover {
+                                transition: all 1s;
+                                box-shadow: 2px 5px 50px 4px rgb(129, 129, 129);
+                                transform: rotate(2deg);
+                            }
+                            
+                            h3 {
+                                text-align: center;
+                                color: #333;
+                                size: 10px;
+                            }
+                            
+                            .digital {
+                                display: inline-block;
+                                width: 100%;
+                                height: 20vh;
+                                background: linear-gradient( to right, rgb(179, 96, 212), rgb(5, 112, 89), rgb(86, 161, 223));
+                                font-size: 60px;
+                                color: transparent;
+                                text-align: center;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                            }
